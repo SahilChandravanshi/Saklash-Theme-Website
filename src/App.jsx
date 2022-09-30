@@ -1,12 +1,17 @@
-import React from 'react';
-import './App.css';
+import React from "react";
+import Hero from "./components/Hero/Hero"
+import "./App.css";
 
-function App() {
-  return (
-    <div>
-      hello
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<div>
+      <Hero />
+			{/* 
+      <Themes />
+      <ColorPallete />
+      <Bottom/> */}
+		</div>
+	);
+};
 
 export default App;
