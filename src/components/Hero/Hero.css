@@ -1,5 +1,6 @@
 .hero_container {
 	height: 100vh;
+	gap: 1rem;
 }
 
 .logo {
@@ -18,12 +19,78 @@
 h1 {
 	font-weight: 500;
 	font-size: 2.5em;
-	color: var(--white);
+	color: var(--yellow);
 	margin-top: 0;
 }
 
 p {
 	font-weight: 500;
-	/* font-size: 1em; */
+	font-size: 1em;
 	color: var(--gray);
+}
+
+/* Colort Palette */
+.colorPalette_container {
+	height: 20vh;
+	gap: 2rem;
+}
+
+.palette_title{
+	font-size: 1.5em;
+	font-weight: 900;
+	color: var(--white);
+}
+
+.dot {
+	height: 1.7rem;
+	width: 1.7rem;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+}
+
+.color_dots{
+	display: flex;
+	flex-direction: column;	
+	gap: 1rem;
+}
+
+.palette_top{
+	display: flex;
+	gap: 0.7rem;
+}
+
+
+.palette_bottom{
+	display: flex;
+	gap: 0.7rem;
+}
+
+.d1 {
+	background-color: var(--palette-col1);
+}
+
+.d2 {
+	background-color: var(--palette-col2);
+}
+.d3 {
+	background-color: var(--palette-col3);
+}
+.d4 {
+	background-color: var(--palette-col4);
+}
+.d5 {
+	background-color: var(--palette-col5);
+}
+.d6 {
+	background-color: var(--palette-col6);
+}
+.d7 {
+	background-color: var(--palette-col7);
+}
+.d8 {
+	background-color: var(--palette-col8);
+}
+.d9 {
+	background-color: var(--palette-col9);
 }

@@ -40,15 +40,16 @@ html {
 
 :root {
 	--background-color: #1c2128;
+	--yellow: #ffcf6e;
 	--white: #e4f1f0;
 	--gray: #a2aabc;
-	--pallete-col1: #22b19c;
-	--pallete-col2: #32b86d;
-	--pallete-col3: #dd6861;
-	--pallete-col4: #c3a422;
-	--pallete-col5: #ad8acb;
-	--pallete-col6: #6c91fd;
-	--pallete-col7: #c97c42;
-	--pallete-col8: #d4d6b9;
-	--pallete-col9: #b2bccc;
+	--palette-col1: #32b86d;
+	--palette-col2: #22b19c;
+	--palette-col3: #6c91fd;
+	--palette-col4: #ad8acb;
+	--palette-col5: #dd6861;
+	--palette-col6: #c97c42;
+	--palette-col7: #c3a422;
+	--palette-col8: #d4d6b9;
+	--palette-col9: #b2bccc;
 }
