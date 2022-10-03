@@ -51,5 +51,6 @@
 
 	.theme_selector {
 		flex-direction: row;
+		margin: 0;
 	}
 }
