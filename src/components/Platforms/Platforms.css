@@ -1,0 +1,52 @@
+.platforms_container{
+  height: 100vh;
+  gap: 2rem;
+}
+
+.platform_heading{
+  color: var(--white);
+}
+
+.platforms{
+  gap: 4em;
+  width: 100%;
+  max-width: 75%;
+  margin: 0 2rem;
+  padding: 1rem;
+}
+
+.platform{
+  cursor: pointer;
+  text-decoration: none;
+  background-color: var(--button-color-dark);
+  width: 8em;
+  padding: 1em;
+  padding-top: 2em;
+  border-radius: 0.5em;
+  max-width: 100%;
+  text-align: center;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+	-webkit-focus-ring-color: rgba(255, 0, 0, 0);
+}
+
+.platform:hover{
+  background-color: var(--button-color);
+}
+
+.platform_image{
+  width: 5em;
+}
+
+.platform_desc{
+  color: var(--gray);
+}
+
+.platform:hover .platform_desc{
+  color: var(--yellow);
+}
+
+@media screen and (max-width: 724px) {
+  .platforms{
+    flex-direction: column;
+  }
+}
