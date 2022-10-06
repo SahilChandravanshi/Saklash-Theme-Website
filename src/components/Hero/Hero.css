@@ -1,6 +1,7 @@
 .hero_container {
 	height: 100vh;
 	gap: 1rem;
+	margin-bottom: 10rem;
 }
 
 .logo {

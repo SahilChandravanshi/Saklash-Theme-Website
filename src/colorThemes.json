@@ -1,0 +1,30 @@
+[
+	{
+		"id": "1",
+		"key" : "1",
+		"title": "Soothing",
+		"image": "assets/SOOTHINGt.png",
+		"color": "#1f2023"
+	},
+	{
+		"id": "2",
+		"key" : "2",
+		"title": "Plain",
+		"image": "assets/PLAINt.png",
+		"color": "#212121"
+	},
+	{
+		"id": "3",
+		"key" : "3",
+		"title": "GunMetal",
+		"image": "assets/GUNMETALt.png",
+		"color": "#282c34"
+	},
+	{
+		"id": "4",
+		"key" : "4",
+		"title": "Oceanic",
+		"image": "assets/OCEANICt.png",
+		"color": "#172731"
+	}
+]
