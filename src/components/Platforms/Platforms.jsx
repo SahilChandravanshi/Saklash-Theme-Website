@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import "./Platforms.css";
 
 const supportedPlatforms = [
@@ -21,15 +22,29 @@ const supportedPlatforms = [
 const Platforms = () => {
 	return (
 		<div className="platforms_container colCenter">
-			<div className="platform_heading">
+			<motion.div
+				className="platform_heading"
+				initial={{ y: 50, opacity: 0 }}
+				whileInView={{ y: 0, opacity: 1 }}
+				viewport={{ once: false, amount: 0.5 }}
+				transition={{ duration: 0.3}}
+			>
 				<h2>Available For</h2>
-			</div>
+			</motion.div>
 			<div className="platforms rowCenter">
 				{supportedPlatforms.map(({ name, image, link }, i) => (
-					<a href={link} key={i} className="platform colCenter">
+					<motion.a
+						initial={{ y: 50, opacity: 0 }}
+						whileInView={{ y: 0, opacity: 1 }}
+						viewport={{ once: false, amount: 0.5 }}
+						transition={{ duration: 0.3, delay: i * 0.1 }}
+						href={link}
+						key={i}
+						className="platform colCenter"
+					>
 						<img src={image} alt="platformImage" className="platform_image" />
 						<p className="platform_desc">{name} </p>
-					</a>
+					</motion.a>
 				))}
 			</div>
 		</div>
