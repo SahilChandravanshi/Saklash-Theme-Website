@@ -1,4 +1,3 @@
-import React from "react";
 import Hero from "./components/Hero/Hero";
 import Themes from "./components/Themes/Themes";
 import Platforms from "./components/Platforms/Platforms";
@@ -11,7 +10,7 @@ const App = () => {
 			<Hero />
 			<Themes />
 			<Platforms />
-			<Bottom/>
+			<Bottom />
 		</div>
 	);
 };

@@ -1,11 +1,10 @@
-import React from "react";
 import "./Hero.css";
-import logo from "../../images/logo.png";
+import logo from "../../assets/images/logo.png";
 
 const Hero = () => {
 	return (
 		<div className="hero_container colCenter">
-			<div class="logo">
+			<div className="logo">
 				<img src={logo} alt="Logo" />
 			</div>
 			<div className="desc colCenter">
@@ -20,17 +19,17 @@ const Hero = () => {
       </div>
 			<div className="color_dots colCenter">
 				<div className="palette_top">
-					<span class="dot d1"></span>
-					<span class="dot d2"></span>
-					<span class="dot d3"></span>
-					<span class="dot d4"></span>
+					<span className="dot d1"></span>
+					<span className="dot d2"></span>
+					<span className="dot d3"></span>
+					<span className="dot d4"></span>
 				</div>
 				<div className="palette_bottom">
-					<span class="dot d5"></span>
-					<span class="dot d6"></span>
-					<span class="dot d7"></span>
-					<span class="dot d8"></span>
-					<span class="dot d9"></span>
+					<span className="dot d5"></span>
+					<span className="dot d6"></span>
+					<span className="dot d7"></span>
+					<span className="dot d8"></span>
+					<span className="dot d9"></span>
 				</div>
 			</div>
 		</div>
