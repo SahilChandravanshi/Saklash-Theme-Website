@@ -4,7 +4,7 @@ import logo from "../../assets/images/logo.png";
 
 const dots = [
 	["dot d1", "dot d2", "dot d3", "dot d4"],
-	["dot d5", "dot d6", "dot d7", "dot d8"],
+	["dot d5", "dot d6", "dot d7", "dot d8", "dot d9"],
 ];
 
 const Hero = () => {
@@ -49,20 +49,28 @@ const Hero = () => {
 				</motion.div>
 				<div className="color_dots colCenter">
 					<div className="palette_top">
-						{/* {dots[0].map((d, i) => {
-							<span key={i} className={d}></span>
-						})} */}
-						<span className="dot d1"></span>
-						<span className="dot d2"></span>
-						<span className="dot d3"></span>
-						<span className="dot d4"></span>
+						{dots[0].map((d, i) => (
+							<motion.d
+								initial={{ x: -50, opacity: 0 }}
+								whileInView={{ x: 0, opacity: 1 }}
+								viewport={{ once: false, amount: 0.5 }}
+								transition={{ duration: 0.2, delay: i * 0.07,type: "easeInOut" }}
+								key={i}
+								className={d}
+							></motion.d>
+						))}
 					</div>
 					<div className="palette_bottom">
-						<span className="dot d5"></span>
-						<span className="dot d6"></span>
-						<span className="dot d7"></span>
-						<span className="dot d8"></span>
-						<span className="dot d9"></span>
+						{dots[1].map((d, i) => (
+							<motion.span
+								initial={{ x: -50, opacity: 0 }}
+								whileInView={{ x: 0, opacity: 1 }}
+								viewport={{ once: false, amount: 0.5 }}
+								transition={{ duration: 0.2, delay: i * 0.07,type: "easeInOut" }}
+								key={i}
+								className={d}
+							></motion.span>
+						))}
 					</div>
 				</div>
 			</div>
