@@ -12,6 +12,12 @@ body {
 
 html {
 	scroll-behavior: smooth;
+	-ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+
+	::-webkit-scrollbar {
+		display: none;
+	}
 }
 
 /* Custom ScrollBar */
@@ -40,8 +46,8 @@ html {
 
 :root {
 	--background-color: #1c2128;
-	--button-color:#2f3b54;
-	--button-color-dark:#202839;
+	--button-color: #2f3b54;
+	--button-color-dark: #202839;
 	--yellow: #ffcf6e;
 	--white: #e4f1f0;
 	--gray: #a2aabc;
